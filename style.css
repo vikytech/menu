@@ -25,6 +25,24 @@ header {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
 }
 
+.lang-en {
+    background: url(./logo.png);
+}
+
+.lang-es {
+    background: url(./logo-es.png);
+}
+
+.logo-wrapper {
+    height: 150px;
+    width: 350px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0 auto;
+    background-size: contain;
+}
+
 .logo-circle {
     font-size: 3rem;
     background: var(--white);
