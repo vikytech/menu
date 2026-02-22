@@ -1,0 +1,124 @@
+:root {
+    --primary-red: #e74c3c;
+    --sunny-yellow: #f1c40f;
+    --leafy-green: #27ae60;
+    --sky-blue: #3498db;
+    --text-dark: #2c3e50;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fef9e7;
+    background-image: radial-gradient(#f1c40f 0.5px, transparent 0.5px);
+    background-size: 20px 20px;
+    margin: 0;
+    color: var(--text-dark);
+}
+
+header {
+    background: var(--primary-red);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem 4rem;
+    font-family: 'Fredoka One', cursive;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+
+.logo-circle {
+    font-size: 3rem;
+    background: var(--white);
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.lang-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+select {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 2px solid var(--white);
+    background: var(--primary-red);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 850px;
+    margin: -30px auto 40px;
+    padding: 0 15px;
+}
+
+.menu-section {
+    background: var(--white);
+    padding: 1.5rem 2rem;
+    border-radius: 25px;
+    box-shadow: 0 8px 0px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+    border: 3px solid var(--text-dark);
+}
+
+h2 {
+    font-family: 'Fredoka One', cursive;
+    margin-top: 0;
+    font-size: 1.6rem;
+}
+
+ul { list-style: none; padding: 0; }
+
+li {
+    padding: 12px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+.dish-name {
+    font-size: 1.2rem;
+    display: inline-block; /* Changed to allow badge to sit next to it */
+    color: var(--text-dark);
+    font-weight: 700;
+}
+
+.desc {
+    margin: 2px 0 0;
+    font-size: 0.95rem;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+/* Badges */
+.badge {
+    background: var(--primary-red);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.sweet-badge {
+    background: var(--sky-blue);
+}
+
+.side-by-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .side-by-side { grid-template-columns: 1fr; }
+}

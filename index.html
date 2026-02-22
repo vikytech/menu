@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potluck Party!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="lang-selector">
+        <select id="language-picker">
+            <option value="en">🇺🇸 English</option>
+            <option value="es">🇪🇸 Español</option>
+        </select>
+    </div>
+
+    <header>
+        <div class="logo-wrapper">
+            <div class="logo-circle">🍛</div>
+        </div>
+        <h1 data-en="The Big Potluck!" data-es="¡El Gran Potluck!">The Big Potluck!</h1>
+        <p data-en="A World of Flavors" data-es="Un Mundo de Sabores">A World of Flavors</p>
+    </header>
+
+    <main class="container">
+        <section class="menu-section main-dishes">
+            <h2 data-en="🥘 Main Feast" data-es="🥘 Banquete Principal">🥘 Main Feast</h2>
+            <ul id="main-menu">
+                <li>
+                    <span class="badge" data-en="Must Try" data-es="Probar sí o sí">Must Try</span>
+                    <strong class="dish-name">Bangarpet Pani Puri 🔥</strong>
+                    <p class="desc" data-en="Spicy, tangy, and refreshing street food" data-es="Comida callejera picante, ácida y refrescante">Spicy, tangy, and refreshing street food</p>
+                </li>
+                <li>
+                    <strong class="dish-name">Chole Bhature 🫓</strong>
+                    <p class="desc" data-en="Spiced chickpea curry served with fried fluffy bread" data-es="Curry de garbanzos picante servido con pan frito esponjoso">Spiced chickpea curry served with fried fluffy bread</p>
+                </li>
+                <li>
+                    <strong class="dish-name">Masala Rice 🍚</strong>
+                    <p class="desc" data-en="Fragrant rice tossed with aromatic spices" data-es="Arroz aromático salteado con especias">Fragrant rice tossed with aromatic spices</p>
+                </li>
+                <li>
+                    <strong class="dish-name">Veggie "Paella" + Portuguese Cheese 🧀</strong>
+                    <p class="desc" data-en="A fusion of Spanish rice and creamy cheese" data-es="Una fusión de arroz español y queso cremoso">A fusion of Spanish rice and creamy cheese</p>
+                </li>
+                <li>
+                    <strong class="dish-name">Sambar Rice 🍛</strong>
+                    <p class="desc" data-en="Comforting lentils and rice mash" data-es="Arroz reconfortante con lentejas">Comforting lentils and rice mash</p>
+                </li>
+                <li>
+                    <strong class="dish-name">Pulao 🥕</strong>
+                    <p class="desc" data-en="Mildly spiced vegetable pilaf" data-es="Pilaf de verduras ligeramente especiado">Mildly spiced vegetable pilaf</p>
+                </li>
+                <li>
+                    <strong class="dish-name">Pao de queijo 🧀</strong>
+                    <p class="desc" data-en="Cheesy Brazilian bread bites" data-es="Bocaditos de pan de queso brasileño">Cheesy Brazilian bread bites</p>
+                </li>
+                <li>
+                    <span class="badge sweet-badge" data-en="Sweet!" data-es="¡Dulce!">Sweet!</span>
+                    <strong class="dish-name">Cinnamon Rolls 🌀</strong>
+                    <p class="desc" data-en="Sweet, gooey cinnamon goodness" data-es="Dulces rollos de canela pegajosos">Sweet, gooey cinnamon goodness</p>
+                </li>
+                <li>
+                    <span class="badge sweet-badge" data-en="Sweet!" data-es="¡Dulce!">Sweet!</span>
+                    <strong class="dish-name" data-en="Thai Desserts 🥥" data-es="Postres Tailandeses 🥥">Thai Desserts 🥥</strong>
+                    <p class="desc" data-en="Exotic and sweet traditional treats" data-es="Dulces tradicionales exóticos">Exotic and sweet traditional treats</p>
+                </li>
+            </ul>
+        </section>
+
+        <div class="side-by-side">
+            <section class="menu-section tapas">
+                <h2 data-en="🍢 Tapas" data-es="🍢 Tapas">🍢 Tapas</h2>
+                <ul>
+                    <li data-en="Olives & Pickles 🫒" data-es="Aceitunas y Encurtidos 🫒">Olives & Pickles 🫒</li>
+                    <li data-en="Bread Sticks 🥖" data-es="Palitos de Pan 🥖">Bread Sticks 🥖</li>
+                    <li data-en="Roasted Nuts 🥜" data-es="Frutos Secos 🥜">Roasted Nuts 🥜</li>
+                    <li data-en="Potato Chips 🥔" data-es="Patatas Fritas 🥔">Potato Chips 🥔</li>
+                    <li data-en="Fresh Fruits 🍓" data-es="Frutas Frescas 🍓">Fresh Fruits 🍓</li>
+                </ul>
+            </section>
+
+            <section class="menu-section drinks">
+                <h2 data-en="🥤 Drinks" data-es="🥤 Bebidas">🥤 Drinks</h2>
+                <ul>
+                    <li>Coke 🥤</li>
+                    <li>Fanta Orange / Naranja 🍊</li>
+                    <li>Ice Tea 🍋</li>
+                    <li data-en="Fresh Water 💧" data-es="Agua Fresca 💧">Fresh Water 💧</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
